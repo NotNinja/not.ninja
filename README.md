@@ -1,1 +1,1 @@
-# not.ninja
+# [!ninja](http://not.ninja)
