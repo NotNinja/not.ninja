@@ -1,0 +1,33 @@
+exclude:
+  - CNAME
+  - Gemfile
+  - README.md
+title: "!ninja"
+description: There are no ninjas here!
+analytics_account: UA-NNNNNNNN-N
+social_links:
+  - email:
+    href: mailto:contact@not.ninja
+    class_prefix: email
+    icon: fa-envelope-square
+    text: Email
+  - github:
+    href: https://github.com/NotNinja
+    class_prefix: github
+    icon: fa-github-square
+    text: GitHub
+  - twitter:
+    href: https://twitter.com/WeAreNotNinja
+    class_prefix: twitter
+    icon: fa-twitter-square
+    text: Twitter
+  - google_plus:
+    href: https://plus.google.com/102045902763231599154
+    class_prefix: google-plus
+    icon: fa-google-plus-square
+    text: Google+
+  - facebook:
+    href: https://www.facebook.com/WeAreNotNinja
+    class_prefix: facebook
+    icon: fa-facebook-square
+    text: Facebook
