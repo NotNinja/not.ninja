@@ -2,12 +2,11 @@
 ---
 $black-color: #000000;
 $white-color: #FFFFFF;
-$primary-color: #808080;
-$secondary-color: #EDEDED;
+$primary-color: #4B0082;
 
 $cover-width: 144px;
 $cover-height: 144px;
-$cover-desktop-width: 356px;
+$cover-desktop-width: 354px;
 $cover-desktop-height: 100px;
 $footer-line-height: 30px;
 $footer-padding: 10px;
@@ -37,7 +36,7 @@ a {
 }
 
 a:hover {
-  color: darken($primary-color, 15%);
+  color: lighten($primary-color, 15%);
 }
 
 main {
@@ -46,7 +45,7 @@ main {
   height: 100%;
   min-height: 100%;
   padding: $main-padding;
-  background-color: $secondary-color;
+  background-color: $primary-color;
 }
 
 footer {
@@ -109,7 +108,7 @@ footer {
 
 .cover-heading {
   margin: 15px 0 0 0;
-  color: $primary-color;
+  color: $white-color;
   font-size: 72pt;
   font-weight: normal;
   text-align: center;
@@ -126,8 +125,8 @@ footer {
 }
 
 .cover-logo-main {
-  background-image: url('/assets/img/not-ninja-banner-356x100.png');
-  background-image: url('/assets/img/not-ninja-banner.svg'), none;
+  background-image: url('/assets/img/not-ninja-banner-invert-354x100.png');
+  background-image: url('/assets/img/not-ninja-banner-invert.min.svg'), none;
 }
 
 .sr-only {
@@ -156,7 +155,7 @@ footer {
   }
 
   .cover-logo-main {
-    background-image: url('/assets/img/not-ninja-logo-144x144.png');
-    background-image: url('/assets/img/not-ninja-logo.svg'), none;
+    background-image: url('/assets/img/not-ninja-logo-invert-144x144.png');
+    background-image: url('/assets/img/not-ninja-logo-invert.min.svg'), none;
   }
 }

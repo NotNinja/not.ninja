@@ -24,6 +24,6 @@ changes and serve the files locally. This can easily be done running `jekyll ser
 Server address: http://127.0.0.1:4000/
 ```
 
-## Copyright
+---
 
-© 2017 [!ninja](https://not.ninja)
+[![Copyright !ninja](https://cdn.rawgit.com/NotNinja/branding/master/assets/copyright/base/not-ninja-copyright-372x50.png)](https://not.ninja)
