@@ -5,7 +5,9 @@
 
   <ul class="social-links">
     {% for social_link in site.social_links %}
-      <li><a href="{{ social_link.href }}" class="social-link-{{ social_link.class_prefix }}" target="_blank" title="{{ social_link.text }}"><i class="fa {{ social_link.icon }}"></i><span class="sr-only">{{ social_link.text }}</span></a></li>
+      <li>
+        <a href="{{ social_link.href }}" class="social-link-{{ social_link.class_prefix }}" target="_blank" title="{{ social_link.text }}">{% if social_link.icon_stack %}<span class="fa-stack">{% for icon in social_link.icon_stack %}<i class="fa {{ icon }} fa-stack-{{ forloop.rindex }}x"></i>{% endfor %}</span>{% else %}<i class="fa {{ social_link.icon }} fa-2x"></i>{% endif %}<span class="sr-only">{{ social_link.text }}</span></a>
+      </li>
     {% endfor %}
   </ul>
 </footer>

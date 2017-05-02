@@ -19,7 +19,9 @@ social_links:
   - slack:
     href: https://slack.not.ninja
     class_prefix: slack
-    icon: fa-slack
+    icon_stack:
+      - fa-square
+      - fa-slack fa-inverse
     text: Slack
   - twitter:
     href: https://twitter.com/WeAreNotNinja

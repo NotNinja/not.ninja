@@ -69,15 +69,16 @@ footer {
   .social-links {
     height: $footer-line-height;
     list-style: none;
-    margin: 1px 0 0 0;
+    margin: -2px 0 0 0;
     padding: 0;
     overflow: hidden;
 
     li {
       display: inline;
 
-      a .fa {
-        font-size: $footer-line-height;
+      a > .fa-stack {
+        margin: 0 -3px;
+        vertical-align: top;
       }
     }
   }
