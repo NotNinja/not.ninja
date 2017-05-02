@@ -16,6 +16,11 @@ social_links:
     class_prefix: github
     icon: fa-github-square
     text: GitHub
+  - slack:
+    href: https://slack.not.ninja
+    class_prefix: slack
+    icon: fa-slack
+    text: Slack
   - twitter:
     href: https://twitter.com/WeAreNotNinja
     class_prefix: twitter
