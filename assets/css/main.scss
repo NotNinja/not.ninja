@@ -12,6 +12,7 @@ $footer-line-height: 30px;
 $footer-padding: 10px;
 $footer-height: $footer-line-height + ($footer-padding * 2);
 $main-padding: 15px;
+$media-desktop-min: $cover-desktop-width + ($main-padding * 2);
 
 *,
 :after,
@@ -29,6 +30,7 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding-bottom: $footer-height;
+  background-color: $white-color;
 }
 
 a {
@@ -53,7 +55,6 @@ footer {
   width: 100%;
   height: $footer-height;
   padding: $footer-padding $main-padding;
-  background-color: $white-color;
   color: $primary-color;
   font-size: 16px;
   text-align: right;
@@ -146,7 +147,11 @@ footer {
   border: 0;
 }
 
-@media (max-width: $cover-desktop-width + ($main-padding * 2)) {
+@media (max-width: $media-desktop-min) {
+  .copyright {
+    font-size: 20px;
+  }
+
   .copyright-year {
     display: none;
   }
