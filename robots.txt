@@ -1,6 +1,7 @@
 ---
 ---
 User-agent: *
-Disallow:
+Disallow: /_headers
+Disallow: /404
 
 Sitemap: {{ '/sitemap.xml' | absolute_url }}
