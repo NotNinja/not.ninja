@@ -4,15 +4,16 @@ $black-color: #000000;
 $white-color: #FFFFFF;
 $primary-color: #4B0082;
 
-$cover-width: 144px;
-$cover-height: 144px;
-$cover-desktop-width: 354px;
 $cover-desktop-height: 100px;
+$cover-desktop-width: 354px;
+$cover-mobile-height: 144px;
+$cover-mobile-width: 144px;
 $footer-line-height: 30px;
 $footer-padding: 10px;
-$footer-height: $footer-line-height + ($footer-padding * 2);
+$footer-height: ($footer-line-height + ($footer-padding * 2));
 $main-padding: 15px;
-$media-desktop-min: $cover-desktop-width + ($main-padding * 2);
+$media-desktop-min: ($cover-desktop-width + ($main-padding * 2));
+$media-mobile-max: ($media-desktop-min - 1);
 
 *,
 :after,
@@ -63,9 +64,14 @@ footer {
     float: left;
     margin: 0;
     padding-right: $main-padding;
+    font-size: 32px;
     font-weight: bold;
     line-height: $footer-line-height;
     text-align: left;
+  }
+
+  .copyright-year {
+    display: none;
   }
 
   .social-links {
@@ -109,22 +115,22 @@ footer {
 }
 
 .cover {
-  width: $cover-desktop-width;
+  width: 100%;
   margin: 0 auto;
 }
 
 .cover-heading {
   margin: 15px 0 0 0;
   color: $white-color;
-  font-size: 72pt;
+  font-size: 32pt;
   font-weight: normal;
   text-align: center;
 }
 
 .cover-logo {
   display: block;
-  width: $cover-desktop-width;
-  height: $cover-desktop-height;
+  width: $cover-mobile-width;
+  height: $cover-mobile-height;
   margin: 0 auto;
   background-position: center center;
   background-repeat: no-repeat;
@@ -132,8 +138,8 @@ footer {
 }
 
 .cover-logo-main {
-  background-image: url('/assets/img/not-ninja-banner-invert-354x100.png');
-  background-image: url('/assets/img/not-ninja-banner-invert.min.svg'), none;
+  background-image: url('/assets/img/not-ninja-logo-invert-144x144.png');
+  background-image: url('/assets/img/not-ninja-logo-invert.min.svg'), none;
 }
 
 .sr-only {
@@ -147,30 +153,32 @@ footer {
   border: 0;
 }
 
-@media (max-width: $media-desktop-min) {
-  .copyright {
-    font-size: 20px;
-  }
+@media (min-width: $media-desktop-min) {
+  footer {
+    .copyright {
+      font-size: inherit;
+    }
 
-  .copyright-year {
-    display: none;
+    .copyright-year {
+      display: inline;
+    }
   }
 
   .cover {
-    width: 100%;
+    width: $cover-desktop-width;
   }
 
   .cover-heading {
-    font-size: 32pt;
+    font-size: 72pt;
   }
 
   .cover-logo {
-    width: $cover-width;
-    height: $cover-height;
+    width: $cover-desktop-width;
+    height: $cover-desktop-height;
   }
 
   .cover-logo-main {
-    background-image: url('/assets/img/not-ninja-logo-invert-144x144.png');
-    background-image: url('/assets/img/not-ninja-logo-invert.min.svg'), none;
+    background-image: url('/assets/img/not-ninja-banner-invert-354x100.png');
+    background-image: url('/assets/img/not-ninja-banner-invert.min.svg'), none;
   }
 }
