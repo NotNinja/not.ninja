@@ -67,10 +67,6 @@ footer {
     text-align: left;
   }
 
-  .copyright-year {
-    display: none;
-  }
-
   .social-links {
     float: right;
     height: $footer-line-height;
@@ -152,7 +148,7 @@ footer {
 
 @media (max-width: $cover-desktop-width + ($main-padding * 2)) {
   .copyright-year {
-    display: inline;
+    display: none;
   }
 
   .cover {
