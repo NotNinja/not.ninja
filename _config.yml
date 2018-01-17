@@ -1,40 +1,51 @@
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
 exclude:
   - CNAME
   - Gemfile
   - README.md
 title: "!ninja"
 description: There are no ninjas here!
-analytics_account: UA-97902449-1
-social_links:
-  - email:
-    href: mailto:contact@not.ninja
-    class_prefix: email
-    icon: fa-envelope-square
-    text: Email
-  - github:
-    href: https://github.com/NotNinja
-    class_prefix: github
-    icon: fa-github-square
-    text: GitHub
-  - slack:
-    href: https://slack.not.ninja
-    class_prefix: slack
-    icon_stack:
-      - fa-square
-      - fa-slack fa-inverse
-    text: Slack
-  - twitter:
-    href: https://twitter.com/WeAreNotNinja
-    class_prefix: twitter
-    icon: fa-twitter-square
-    text: Twitter
-  - google_plus:
-    href: https://plus.google.com/102045902763231599154
-    class_prefix: google-plus
-    icon: fa-google-plus-square
-    text: Google+
-  - facebook:
-    href: https://www.facebook.com/WeAreNotNinja
-    class_prefix: facebook
-    icon: fa-facebook-square
-    text: Facebook
+url: https://not.ninja
+twitter:
+  username: WeAreNotNinja
+logo: /assets/img/not-ninja-logo-min-fill-512x512.png
+lang: en
+google_analytics_account: UA-97902449-1
+social:
+  name: "!ninja"
+  links:
+    - https://twitter.com/WeAreNotNinja
+    - https://www.facebook.com/WeAreNotNinja
+    - https://plus.google.com/102045902763231599154
+    - https://github.com/NotNinja
+navigation:
+  social_links:
+    - href: mailto:contact@not.ninja
+      class_prefix: email
+      icon: fa-envelope-square
+      text: Email
+    - href: https://github.com/NotNinja
+      class_prefix: github
+      icon: fa-github-square
+      text: GitHub
+    - href: https://slack.not.ninja
+      class_prefix: slack
+      icon_stack:
+        - fa-square
+        - fa-slack fa-inverse
+      text: Slack
+    - href: https://twitter.com/WeAreNotNinja
+      class_prefix: twitter
+      icon: fa-twitter-square
+      text: Twitter
+    - href: https://plus.google.com/102045902763231599154
+      class_prefix: google-plus
+      icon: fa-google-plus-square
+      text: Google+
+    - href: https://www.facebook.com/WeAreNotNinja
+      class_prefix: facebook
+      icon: fa-facebook-square
+      text: Facebook

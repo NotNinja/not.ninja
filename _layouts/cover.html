@@ -3,10 +3,12 @@ layout: default
 ---
 <div class="cover-container">
   <div class="cover">
-    <div class="cover-logo {{ page.cover.logo_class }}"><span class="sr-only">!ninja</span></div>
+    <a class="cover-logo {{ page.cover.logo_class }}" href="/" title="{{ site.title | escape }}">
+      <span class="sr-only">{{ site.title | escape }}</span>
+    </a>
 
     {% if page.cover.heading %}
-      <h1 class="cover-heading">{{ page.cover.heading }}</h1>
+      <h1 class="cover-heading">{{ page.cover.heading | escape }}</h1>
     {% endif %}
   </div>
 </div>

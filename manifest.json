@@ -4,13 +4,10 @@
   "name": "{{ site.title }}",
   "short_name": "{{ site.title }}",
   "description": "{{ site.description }}",
-  "display": "browser",
-  "orientation": "portrait-primary",
-  "background_color": "#FFFFFF",
-  "theme_color": "#4B0082",
-  "dir": "ltr",
   "lang": "en",
-  "start_url": "/?utm_source=web_app_manifest",
+  "start_url": "/?utm_source=homescreen",
+  "display": "standalone",
+  "orientation": "portrait-primary",
   "icons": [
     {
       "src": "/favicon.ico",
@@ -28,18 +25,8 @@
       "type": "image/png"
     },
     {
-      "src": "/assets/img/not-ninja-logo-min-fill-36x36.png",
-      "sizes": "36x36",
-      "type": "image/png"
-    },
-    {
       "src": "/assets/img/not-ninja-logo-min-fill-48x48.png",
       "sizes": "48x48",
-      "type": "image/png"
-    },
-    {
-      "src": "/assets/img/not-ninja-logo-min-fill-72x72.png",
-      "sizes": "72x72",
       "type": "image/png"
     },
     {
@@ -48,13 +35,18 @@
       "type": "image/png"
     },
     {
+      "src": "/assets/img/not-ninja-logo-min-fill-120x120.png",
+      "sizes": "120x120",
+      "type": "image/png"
+    },
+    {
       "src": "/assets/img/not-ninja-logo-min-fill-144x144.png",
       "sizes": "144x144",
       "type": "image/png"
     },
     {
-      "src": "/assets/img/not-ninja-logo-min-fill-168x168.png",
-      "sizes": "168x168",
+      "src": "/assets/img/not-ninja-logo-min-fill-152x152.png",
+      "sizes": "152x152",
       "type": "image/png"
     },
     {
@@ -63,9 +55,15 @@
       "type": "image/png"
     },
     {
-      "src": "/assets/img/not-ninja-logo-min-fill-256x256.png",
-      "sizes": "256x256",
+      "src": "/assets/img/not-ninja-logo-min-fill-512x512.png",
+      "sizes": "512x512",
       "type": "image/png"
+    },
+    {
+      "src": "/assets/img/not-ninja-logo-min-fill.min.svg",
+      "type": "image/svg+xml"
     }
-  ]
+  ],
+  "background_color": "#4B0082",
+  "theme_color": "#4B0082"
 }

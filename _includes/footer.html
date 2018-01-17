@@ -4,20 +4,21 @@
   </p>
 
   <ul class="social-links">
-    {% for social_link in site.social_links %}
+    {% for link in site.navigation.social_links %}
       <li>
-        <a href="{{ social_link.href }}" class="social-link-{{ social_link.class_prefix }}" target="_blank" title="{{ social_link.text }}">{% if social_link.icon_stack %}<span class="fa-stack">{% for icon in social_link.icon_stack %}<i class="fa {{ icon }} fa-stack-{{ forloop.rindex }}x"></i>{% endfor %}</span>{% else %}<i class="fa {{ social_link.icon }} fa-2x"></i>{% endif %}<span class="sr-only">{{ social_link.text }}</span></a>
+        <a class="social-link social-link-{{ link.class_prefix }}" href="{{ link.href }}" rel="noopener" target="_blank" title="{{ link.text | escape }}">
+          {% if link.icon_stack %}
+            <span class="fa-stack">
+              {% for icon in link.icon_stack %}
+                <i class="fa {{ icon }} fa-stack-{{ forloop.rindex }}x" aria-hidden="true"></i>
+              {% endfor %}
+            </span>
+          {% else %}
+            <i class="fa {{ link.icon }} fa-2x" aria-hidden="true"></i>
+          {% endif %}
+          <span class="sr-only">{{ link.text | escape }}</span>
+        </a>
       </li>
     {% endfor %}
   </ul>
 </footer>
-
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-  ga('create', '{{ site.analytics_account }}', 'auto');
-  ga('send', 'pageview');
-</script>

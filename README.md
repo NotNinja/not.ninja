@@ -1,4 +1,4 @@
-# !ninja Homepage
+# not.ninja
 
 The [!ninja](https://not.ninja) homepage which is hosted on [GitHub Pages](https://pages.github.com) using
 [Jekyll](https://jekyllrb.com).
