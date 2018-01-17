@@ -15,7 +15,6 @@ webrick:
 include:
   - _headers
 exclude:
-  - CNAME
   - Gemfile
   - README.md
 title: "!ninja"

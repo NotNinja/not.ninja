@@ -1,6 +1,6 @@
 # not.ninja
 
-The [!ninja](https://not.ninja) homepage which is hosted on [GitHub Pages](https://pages.github.com) using
+The [!ninja](https://not.ninja) homepage which is hosted on [Netlify](https://www.netlify.com) and built using
 [Jekyll](https://jekyllrb.com).
 
 ## Install
