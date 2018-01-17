@@ -67,7 +67,12 @@ footer {
     text-align: left;
   }
 
+  .copyright-year {
+    display: none;
+  }
+
   .social-links {
+    float: right;
     height: $footer-line-height;
     list-style: none;
     margin: -2px 0 0 0;
@@ -146,6 +151,10 @@ footer {
 }
 
 @media (max-width: $cover-desktop-width + ($main-padding * 2)) {
+  .copyright-year {
+    display: inline;
+  }
+
   .cover {
     width: 100%;
   }
