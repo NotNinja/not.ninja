@@ -5,7 +5,7 @@ plugins:
 webrick:
   headers:
     Access-Control-Allow-Origin: "https://not.ninja"
-    Content-Security-Policy: "default-src 'self'; script-src 'self' *.cloudfront.net cdnjs.cloudflare.com *.google-analytics.com; style-src 'self' *.cloudfront.net cdnjs.cloudflare.com; font-src 'self' *.cloudfront.net cdnjs.cloudflare.com; img-src 'self' *.cloudfront.net *.google-analytics.com"; connect-src 'self *.google-analytics.com
+    Content-Security-Policy: "default-src 'self'; script-src 'self' *.cloudfront.net cdnjs.cloudflare.com *.google-analytics.com; style-src 'self' *.cloudfront.net cdnjs.cloudflare.com; font-src 'self' *.cloudfront.net cdnjs.cloudflare.com; img-src 'self' *.cloudfront.net *.google-analytics.com; connect-src 'self *.google-analytics.com"
     Referrer-Policy: "no-referrer"
     Strict-Transport-Security: "max-age=31536000; includeSubDomains"
     Vary: "Accept-Encoding, Origin"
