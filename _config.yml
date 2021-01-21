@@ -30,7 +30,6 @@ social:
   links:
     - https://twitter.com/WeAreNotNinja
     - https://www.facebook.com/WeAreNotNinja
-    - https://plus.google.com/102045902763231599154
     - https://github.com/NotNinja
 navigation:
   social_links:
@@ -52,10 +51,6 @@ navigation:
       class_prefix: twitter
       icon: fa-twitter-square
       text: Twitter
-    - href: https://plus.google.com/102045902763231599154
-      class_prefix: google-plus
-      icon: fa-google-plus-square
-      text: Google+
     - href: https://www.facebook.com/WeAreNotNinja
       class_prefix: facebook
       icon: fa-facebook-square
